@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "GetInfo";
+}
+
+<h2>GetInfo</h2>
+@using (Html.BeginForm())
+{
+    <input type="text" name="ten" />;
+    <input type="text" name="tuoi" />;
+    <input type="text" name="lop"/>;
+    <input type="submit" value=" Hiển thị thông tin"/>;
+}
+<h2>
+    Thông tin: Họ và tên:@ViewBag.ten <br>
+    Tuổi:@ViewBag.tuoi<br>
+    Lớp:@ViewBag.lop
+</h2>
+
