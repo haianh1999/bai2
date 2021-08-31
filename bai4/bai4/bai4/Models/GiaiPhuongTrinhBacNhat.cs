@@ -7,7 +7,7 @@ namespace bai4.Models
 {
     public class GiaiPhuongTrinhBacNhat
     {
-        public double GiaiPhuongTrinhBacNhat(double a, double b)
+        public double GiaiPhuongTrinhBacNhatt(double a, double b)
         {
             double x;
             x = -b / a;

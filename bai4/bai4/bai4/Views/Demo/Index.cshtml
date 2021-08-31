@@ -1,16 +1,15 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
-    Layout = "~/View/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
-@using (Html.BeginForm("GiaiPhuongTrinhBacNhat", "GiaiPhuongTrinhBacNhat"))
+@using (Html.BeginForm("GiaiPhuongTrinhBacNhat", "GiaiPhuongTrinhBacNhatt"))
 {
-    <label>Số Thứ Nhất</label>
-    <input type="text" name="soA" />
-    <label>Số Thứ Hai</label>
-    <input type="text" name="soB" />
-    <input type=" "submit" value="GiaiPhuongTrinh"/?
+    <label>Số thứ nhất</label>
+    <input type="text" name="SoA" />
+    <label>Số thứ hai</label>
+    <input type="text" name="SoB" />
+    <input type="submit" value="Giải Phương Trình" />
 }
 

@@ -9,20 +9,23 @@ namespace bai4.Controllers
 {
     public class DemoController : Controller
     {
+     
         GiaiPhuongTrinhBacNhat gpt = new GiaiPhuongTrinhBacNhat();
-        // GET: Demo
+        
         public ActionResult Index()
         {
             return View();
         }
+
         [HttpPost]
-        public ActionResult GiaiPhuongTrinhBacNhat(string soA, string soB)
+       public ActionResult DemoControlerGiaiPhuongtrinhBacNhatt(string soA, string soB)
         {
             double a = double.Parse(soA);
-            double b =double.Parse(soB);
-            double x = gpt.GiaiPhuongTrinhBacNhat(a, b);
+            double b = double.Parse(soB);
+            double x = gpt.GiaiPhuongTrinhBacNhatt(a,b);
             ViewBag.NghiemPT = x;
             return View();
         }
+
     }
 }
