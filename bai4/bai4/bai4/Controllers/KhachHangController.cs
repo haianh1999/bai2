@@ -7,7 +7,7 @@ using bai4.Models;
 
 namespace bai4.Controllers
 {
-    public class StudentController : Controller
+    public class KhachHangController : Controller
     {
         LTQLDbContext db = new LTQLDbContext();
         // GET: Student
