@@ -16,5 +16,9 @@ namespace bai4.Controllers
             var model = db.KhachHangs.ToList();
             return View(model);
         }
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
