@@ -18,7 +18,7 @@ namespace bai4.Models
         public virtual DbSet<MatHang> MatHangs { get; set; }
         public virtual DbSet<NhapHang> NhapHangs { get; set; }
         public virtual DbSet<ChiTietNhap> ChiTietNhaps { get; set; }
-        
+        public virtual DbSet<Employee> Employee { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

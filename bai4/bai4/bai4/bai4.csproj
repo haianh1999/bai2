@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DemoController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangController.cs" />
     <Compile Include="Global.asax.cs">
@@ -138,9 +139,14 @@
     <Compile Include="Migrations\202109070610258_Create_table_Account.Designer.cs">
       <DependentUpon>202109070610258_Create_table_Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109140657403_create-table-Employee.cs" />
+    <Compile Include="Migrations\202109140657403_create-table-Employee.Designer.cs">
+      <DependentUpon>202109140657403_create-table-Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ChiTietNhap.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\GiaiPhuongTrinhBacNhat.cs" />
     <Compile Include="Models\HoaDon.cs" />
     <Compile Include="Models\KhachHang.cs" />
@@ -189,6 +195,11 @@
     <Content Include="Views\Demo\GiaiPhuongTrinhBacNhat.cshtml" />
     <Content Include="Views\KhachHang\Index.cshtml" />
     <Content Include="Views\KhachHang\Create.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -210,6 +221,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202109070610258_Create_table_Account.resx">
       <DependentUpon>202109070610258_Create_table_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109140657403_create-table-Employee.resx">
+      <DependentUpon>202109140657403_create-table-Employee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

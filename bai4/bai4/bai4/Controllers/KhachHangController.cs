@@ -20,5 +20,17 @@ namespace bai4.Controllers
         {
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryTokenAttribute]
+        public ActionResult Create(KhachHang std)
+        {
+            if (ModelState.IsValid)
+            {
+                db.KhachHangs.Add(std);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }    
+            return View();
+        }
     }
 }
